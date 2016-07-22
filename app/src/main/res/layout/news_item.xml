@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/pictureIv"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pictureIv"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/titleTv"
+                android:layout_below="@id/titleTv"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/expandIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow_down"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/upLayout"
+            android:layout_below="@id/upLayout"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
